@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .logo_label {
+    position: relative;
+  }
+  & .logo_content {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+    position: relative;
+    color: #555248;
+  }
+}

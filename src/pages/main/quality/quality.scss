@@ -1,0 +1,51 @@
+.quality {
+  position: relative;
+  padding: 52px 0;
+  overflow: hidden;
+  background: #fdfdfb;
+  &_big-circle {
+    position: absolute;
+    width: 744.38px;
+    height: 744.38px;
+    border-radius: 50em;
+    border: 1px solid #d4b098;
+    border-top: 1px transparent;
+    border-right: 1px transparent;
+    right: calc(-744.38px / 1.5);
+    bottom: calc(-744.38px / 3);
+  }
+  &_low-circle {
+    position: absolute;
+    right: calc(-365.16px / 2);
+    top: calc(-365.16px / 2);
+    width: 365.16px;
+    height: 365.16px;
+    border-radius: 50em;
+    border: 1px solid #d4b098;
+    border-top: 1px transparent;
+    border-right: 1px transparent;
+  }
+  &_decoration {
+    top: 0;
+    position: absolute;
+    max-width: 468px;
+    max-height: 519px;
+    width: 100%;
+    height: 100%;
+    background: #f7f5ef;
+  }
+  &_wrapper {
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      z-index: 1;
+
+      max-width: 521px;
+      max-height: 414px;
+    }
+  }
+}

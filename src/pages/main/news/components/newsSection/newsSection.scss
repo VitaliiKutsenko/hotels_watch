@@ -1,0 +1,52 @@
+.news-section {
+  display: flex;
+  flex-direction: column;
+  &_title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #1b1a17;
+  }
+  &_info {
+    margin-top: 40px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #444240;
+  }
+  &_list {
+    margin-top: 123px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    column-gap: 18px;
+    & * {
+      transition: 0.3s linear;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      border-radius: 2px;
+      cursor: pointer;
+      box-shadow: none;
+      &.instagram:hover {
+        background: rgba(255, 165, 0, 0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+      }
+      &.facebook:hover {
+        background: rgba(0, 191, 255, 0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+      }
+      &.twitter:hover {
+        background: rgba(96, 96, 207, 0.5);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

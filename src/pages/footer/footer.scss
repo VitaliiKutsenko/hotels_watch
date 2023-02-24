@@ -1,0 +1,66 @@
+.footer {
+  background: #444240;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 80px 0;
+  & * {
+    transition: 0.3s linear;
+  }
+  & li {
+    width: fit-content;
+    padding: 5px;
+    border-radius: 6px;
+    &:hover {
+      background: rgba(98, 98, 0, 0.3);
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3);
+    }
+  }
+  & a {
+    text-decoration: none;
+    &:link {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    &:visited {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+  &_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    & a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: rgba(255, 255, 255, 0.75);
+    }
+    & .logo {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 32px;
+      & .logo_label {
+        position: relative;
+        width: 25px;
+        height: 25px;
+      }
+      & .logo_content {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.14em;
+
+        color: #ffffff;
+      }
+    }
+  }
+}

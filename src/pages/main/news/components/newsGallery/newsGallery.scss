@@ -1,0 +1,18 @@
+.news-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+  &__separator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  & img:last-child {
+  }
+}

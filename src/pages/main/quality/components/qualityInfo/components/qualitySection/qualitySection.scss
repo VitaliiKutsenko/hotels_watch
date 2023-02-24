@@ -1,0 +1,42 @@
+.quality_section {
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 38px;
+  column-gap: 5px;
+  &__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #1b1a17;
+  }
+  &__info {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #444240;
+  }
+  &__catalog-button {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    background: #d4b098;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    padding: 26px 38px;
+    color: #ffffff;
+    border: none;
+    margin-top: 5px;
+  }
+}

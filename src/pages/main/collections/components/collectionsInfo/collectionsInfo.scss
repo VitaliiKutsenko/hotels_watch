@@ -1,0 +1,48 @@
+@import "./src/style/mixins";
+
+.collections_info {
+  z-index: 1;
+  align-self: center;
+  &__title {
+    position: relative;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    color: #1b1a17;
+    margin-bottom: 16px;
+    &:before {
+      @include line(50px);
+      left: calc(-50px - 15px);
+    }
+  }
+  &__type {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: #1b1a17;
+    margin-bottom: 39px;
+  }
+  &__info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(27, 26, 23, 0.82);
+    margin-bottom: 64px;
+  }
+  &__presents {
+    background: #444240;
+    padding: 26px 38px;
+    height: fit-content;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}

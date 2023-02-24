@@ -1,0 +1,45 @@
+.popular {
+  margin: 76px 0 86px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100%;
+  &_title {
+  }
+  &_link {
+    align-self: flex-end;
+    justify-self: center;
+    margin-right: 98px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+
+    &:hover:after {
+      border-radius: 6px;
+      transition: 0.3s linear;
+      border: 1px solid #b99844;
+      height: 100%;
+      bottom: 0;
+      background: rgba(185, 152, 68, 0.1);
+    }
+    &:after {
+      transition: 0.3s linear;
+      height: 0;
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid #c4c0b6;
+      bottom: -11px;
+      left: 0;
+    }
+    &:link {
+      color: inherit;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
+}

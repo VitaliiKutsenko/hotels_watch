@@ -1,0 +1,30 @@
+.nav_tools {
+  display: flex;
+  gap: 23px;
+  & .img_wrapper {
+    position: relative;
+    & .img_state {
+      visibility: hidden;
+      &.show {
+        visibility: visible;
+        right: 0;
+        position: absolute;
+        background: #e6c8b4;
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 9px;
+      }
+    }
+    & img {
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}
